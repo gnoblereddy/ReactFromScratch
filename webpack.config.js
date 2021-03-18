@@ -28,6 +28,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        historyApiFallback: true,
+    },
     // add a custom index.html as the template
     plugins: [new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'index.html') })]
 };
